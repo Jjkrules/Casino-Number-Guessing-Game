@@ -2,8 +2,18 @@
 #include <cstdlib>
 #include <ctime>
 
+
+void showBalance(int balance) {
+    std::cout << "Current Balance: $" << balance << std::endl;
+}
+
 int main() {
     std::srand(std::time(0));  // 🔥 This fixes your issue
+    int balance = 100;
+    char chice;
+    std::cout << "Welcome to the Guessing Game!" << std::endl;
+    showBalance(balance);
+
 
     int guess;
     std::cout << "Enter your guess (0-10): ";
